@@ -18,6 +18,9 @@ export class StoryConnectionsStore extends DataStore<StoryBlockConnection>
 {
   protected store = 'story-connections-store';
   protected _activeRepo: Repository<StoryBlockConnection>;
+  static remove(id: any) {
+    throw new Error('Method not implemented.');
+  }
   
   constructor(_story$$: ActiveStoryStore,
               _repoFac: DataService,
